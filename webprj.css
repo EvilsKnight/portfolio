@@ -1,0 +1,56 @@
+
+body {
+    background: linear-gradient(-45deg, #693221, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 9s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.menu{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.menu_list{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 38px;
+}
+.menu_list li{
+    margin: 10px;
+    display: inline;
+}
+.menu_list i{
+    font-weight: 800;
+    font-size: 50px;
+    color: black;
+    
+}
+.menu_list div a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+.menu_list li img{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+}
