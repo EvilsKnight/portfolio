@@ -359,6 +359,7 @@ nav .fas{
 @media only screen and (max-width: 600px){
 #header{
     background-image: url(backgroundtrick-phone.jpg); 
+    animation:none;
 }
 .header-text {
     margin-top: 100%;
