@@ -15,14 +15,32 @@ html{
 body{
     background: #000;
     color: white;
+    
 }
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 #header{
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
     background: url(backgroundtrick.jpg);
     background-size: cover;
     background-position: center;
+    animation: gradient 9s ease infinite; */
+
+    background: linear-gradient(-45deg, #000000, #262424, #000000, #282928);
+    background-size: 400% 400%;
+    animation: gradient 9s ease infinite;
+    height: 100vh;
 }
 
 .container{
