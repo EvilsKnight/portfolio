@@ -30,17 +30,17 @@ body{
   }
 
 #header{
-    /* width: 100%;
+    width: 100%;
     height: 100vh;
     background: url(backgroundtrick.jpg);
     background-size: cover;
     background-position: center;
-    animation: gradient 9s ease infinite; */
+    /* animation: gradient 9s ease infinite; */
 
-    background: linear-gradient(-45deg, #000000, #262424, #000000, #282928);
+    /* background: linear-gradient(-45deg, #000000, #262424, #000000, #282928);
     background-size: 400% 400%;
     animation: gradient 9s ease infinite;
-    height: 100vh;
+    height: 100vh; */
 }
 
 .container{
@@ -85,10 +85,10 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 40px;
 }
 .header-text h1{
-font-size: 60px;
+font-size: 90px;
 margin-top: 8px;
 }
 .header-text h1 span{
@@ -97,8 +97,10 @@ margin-top: 8px;
 
 /* about section */
 #about{
+    /* border: 2px solid #ff004f; */
     padding: 80px 0;
     color: #ababab;
+    margin: 5px;
 }
 .row{
     display: flex;
@@ -111,9 +113,23 @@ margin-top: 8px;
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    
+    /* border: 1px solid #ff004f; */
 }
 .about-col-2{
     flex-basis: 60%;
+    /* border: 1px solid #ff004f; */
+    padding: 5px;
+    font-size: 30px;
+    text-align: justify; 
+    font-family: 'Kanit', sans-serif; 
+    
+}
+.intro-head{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 15px;
 }
 .sub-title{
     font-size: 60px;
@@ -122,10 +138,12 @@ margin-top: 8px;
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
+    
 
 }
 .tab-links{
+    
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -166,19 +184,23 @@ margin-top: 8px;
 /* services */
 #services{
     padding: 30px 10px;
+    
 
 }
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 20px;
     margin-top: 26px;
+    
 }
 .services-list div{
     background: #262626;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 10px;
     transition: background 0.5s,transform 0.5s;
 }
@@ -221,6 +243,7 @@ margin-top: 8px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 60dvh;
 }
 .work-list .work img{
     width: 100%;
@@ -239,16 +262,54 @@ margin-top: 8px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
 }
+.layer p{
+    text-align: justify;
+}
+.layer1{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.05),#52494c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    background-size: cover;
+}
+.project-class{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;   
+    list-style: none;
+ 
+}
+.project-class li{
+    margin-top: 20px;  
+ 
+}
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+.layer1 h3{
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 .layer a{
     margin-top: 20px;
@@ -263,9 +324,13 @@ margin-top: 8px;
 }
 .work:hover img{
     transform: scale(1.1);
+    opacity: 0.5;
 }
 .work:hover .layer{
     height: 100%;
+}
+.work:hover .layer1{
+    height: 0%;
 }
 .btn{
     display: block;
@@ -351,6 +416,12 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
+a.fa-brands {
+    width: 22px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: azure;
+}
 
 /* -----------------MEADIA QUERY---------------------- */
 nav .fas{
@@ -409,6 +480,9 @@ nav ul .fas{
 .tab-links{
     font-size: 16px;
     margin-right: 20px;
+}
+.services-list{
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .contact-left,.contact-right{
     flex-basis: 100%;
